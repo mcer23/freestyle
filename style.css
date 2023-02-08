@@ -14,7 +14,7 @@ html{
     font-family: 'Questrial', sans-serif;
     background-color: #FFFEFA;
 }
-
+/* header */
 .container-fluid img{
     width: 125px;
     height: auto;
@@ -27,28 +27,11 @@ html{
 .carousel--img{
     height: 156px;
 }
-/* COMPRAR */
-.comprar--title{
-    margin: 25px;
-    font-size: 1.2rem;
-    color: var(--orange);
-    font-weight: 600;
-    line-height: 13.8px;
-}
-.card-title{
-    padding:4px;
-}
-.card{
-    margin:22px auto;
-    border-color: var(--gray);
-}
-.card-text{
-    font-size: 1.5rem;
-    line-height: 11.5px;
-    padding-right: 60px;
-}
+/* !COMPRAR */
+
 /* Footer */
 .footer--line{
+    margin-top: 40px;
     width:100%;
     border: 1px solid var(--yellow);
 }
@@ -89,6 +72,7 @@ html{
     height: 50px;
 }
 @media(min-width:720px){
+    /* header */
     .container-fluid img{
         width: 344px;
         height: auto;
@@ -108,17 +92,6 @@ html{
     line-height: 27.6px;
     }
     /* Comprar */
-    .card-title{
-        padding:4px;
-    }
-    .card{
-        margin:22px auto;
-        border-color: var(--gray);
-    }
-    .card-text{
-        font-size: 1.5rem;
-        line-height: 11.5px;
-        padding-right: 60px;
-    }
+
 
 }
