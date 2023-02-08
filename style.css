@@ -25,10 +25,37 @@ html{
 }
 /* Carousel */
 .carousel--img{
-    height: 156px;
+    height: auto;
 }
-/* !COMPRAR */
-
+.comprar--title{
+    margin:18px;
+    font-size: 1.2rem;
+    line-height:1.3rem;
+    font-weight: bold;
+    color:var(--orange);
+}
+.comprar--productos{
+    display:grid;
+    grid-auto-flow: row; /*cambiar por column en desktop*/
+    margin: auto 50px;
+}
+.card{
+    margin-bottom: 20px;
+}
+.card-title{
+    padding:8px;
+    font-size: 1.2rem;
+    line-height: 13.8px;
+    font-weight: bold;
+}
+.card-text{
+    padding:8px;
+    font-size: 1.2rem;
+    line-height: 13.8px;
+}
+.card-body img{
+    padding-left: 55px;
+}
 /* Footer */
 .footer--line{
     margin-top: 40px;
@@ -44,15 +71,18 @@ html{
     margin:22px;
 }
 .footer--legales{
-    width:137px;
+    width:200px;
     margin-left:22px;
     
 }
 .footer--legales h3{
     font-weight: bold;
 }
+.footer--legales ul{
+    margin-left: -20px;
+    list-style-type:none;
+}
 .footer--legales a{
-    text-decoration: none;
     color:black;
     line-height: 11.5px;
 }
@@ -81,17 +111,83 @@ html{
         width:100%;
         border: 2px solid var(--yellow);
     }
-    /* Carousel */
-    .carousel--img{
-    height: 624px;
-    }
-    /* COMPRAR */
-    .comprar--title{
-    margin-left: 88px;
-    font-size: 2.4rem;
-    line-height: 27.6px;
-    }
+    
     /* Comprar */
-
+    .comprar--title{
+        font-size: 2.4rem;
+        line-height:2.7rem;
+    }
+    .comprar--productos{
+        display:grid;
+        grid-auto-flow: column; /*cambiar por column en desktop*/
+        justify-content: space-evenly;
+        margin: auto 50px;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    .card-img-top{
+        width:170px;
+        height: auto;
+    }
+    .card-title{
+        padding:8px;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        font-weight: bold;
+    }
+    .card-text{
+        padding:8px;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .card-body img{
+        padding-left: 30px;
+    }
+    /* Footer */
+    .footer--line{
+        border: 2px solid var(--yellow);
+    }
+    .footer--layout{
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+    }
+    .footer--txt{
+        font-size: 1.8rem;
+        line-height: 2rem
+    }
+    .footer--dudas{
+        width: 390px;
+        margin:22px;
+    }
+    .footer--legales{
+        width:245px;
+        margin-left:22px;
+        
+    }
+    .footer--legales h3{
+        font-weight: bold;
+    }
+    .footer--legales a{
+        text-decoration: none;
+        font-size: 1.8rem;
+        line-height: 2rem
+    }
+    .footer-company{
+        display: grid;
+        grid-column: auto auto;
+    }
+    .footer-company{
+        width: 424px;
+        margin:22px;
+    }
+    .footer-company h3{
+        font-weight: bold;
+    }
+    .footer-company-logo{
+        width:80px;
+        height: 80px;
+    }
 
 }
